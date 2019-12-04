@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/result', method=["POST"])
+@app.route('/result', methods=["POST"])
 def result():
     return "Hello"
 
